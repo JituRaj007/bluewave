@@ -12,7 +12,7 @@ const MenuHeaderData: Menu[] = [
         id: 2,
         title: "About",
         class: "",
-        path: "/",
+        path: "/about",
         newTab: false,
     },
     {
