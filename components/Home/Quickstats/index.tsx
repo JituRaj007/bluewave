@@ -28,10 +28,10 @@ const Quickstats = () =>{
                                     <CountUp 
                                         className="custom-count"
                                         start={0}
-                                        end={700}    
+                                        end={Message.IMPRESSIONS_NUMBER}     
                                         useEasing={true}
                                         prefix=""
-                                        suffix="M+"
+                                        suffix={Message.IMPRESSIONS_AFTER}
                                     />
                                     <h5>{Message.IMPRESSIONS_TITLE}</h5>
                                 </div>
@@ -39,10 +39,10 @@ const Quickstats = () =>{
                                     <CountUp 
                                         className="custom-count"
                                         start={0}
-                                        end={Message.IMPRESSIONS_NUMBER}  
+                                        end={Message.TWOTHOUSAND_NUMBER}  
                                         useEasing={true}
                                         prefix=""
-                                        suffix={Message.IMPRESSIONS_AFTER}
+                                        suffix={Message.TWOTHOUSAND_AFTER}
                                     />
                                     <h5>{Message.PROJECT_TITLE}</h5>
                                 </div>
