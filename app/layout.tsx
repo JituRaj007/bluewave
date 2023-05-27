@@ -8,10 +8,10 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 const isServer = typeof window === 'undefined';
 const WOW = !isServer ? require('wow.js') : null;
-export const metadata = {
+/*export const metadata = {
   title: 'Blue Wave',
   description: '',
-}
+}*/
 
 
 export default function RootLayout({
