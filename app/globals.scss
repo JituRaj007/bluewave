@@ -48,3 +48,24 @@ body {
 h1, h2 ,h3, h4, h5, p, em { color: $white-color; }
 .sub-child-content{margin-bottom: 15px;}
 .btn { border: 1px solid $btn-color !important; color: $btn-color !important; }
+
+.banner-section{
+  height: 1160px;
+  .banner-left-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }  
+  .banner-right-img{
+    position: absolute;
+    top: 210px;
+    right: 0;
+  }
+}
+
+.navbar{
+  ul {
+    grid-column-gap: 45px;
+    column-gap: 45px;
+  }  
+}
