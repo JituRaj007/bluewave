@@ -7,17 +7,18 @@ const Message = require("../../../data/Home/Banner");
 const Banner = () => {
     return(
         <>
-            <div className="banner-section">
+            <div className="banner-section d-flex align-items-center justify-content-center text-center pb-5">
+            <Image src={LeftSideImage} alt="Left Img" className="banner-left-img" />
+            <Image src={RightSideImage} alt="Right Img" className="banner-right-img" />
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">
-                            <Image src={LeftSideImage} alt="Left Img" className="banner-left-img" />
+                        <div className="col-12">                            
                             <div className={"wow fadeInUp banner-text"} >
                                 <h1 className="">{Message.TITLE}</h1>
                                 <p>{Message.FIRST_CONTENT}<br />{Message.SECOND_CONTENT}</p>
                                 <Link href="/" className="btn" >{Message.BTN}</Link>
                             </div>
-                            <Image src={RightSideImage} alt="Right Img" className="banner-right-img" />
+                            
                         </div>
                     </div>
                 </div>
