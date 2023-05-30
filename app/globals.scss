@@ -28,6 +28,7 @@ body {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 300;
   font-size: 18px;
+  overflow-x: hidden;
   line-height: 2;
   background: linear-gradient(
       to bottom,
@@ -325,6 +326,8 @@ h2{
     margin: 0;
     padding: 0;
     .slick-list {
+      margin-left: -15px;
+      margin-right: -15px;
       .slick-track {
         .slick-slide {
           padding: 0 15px;
@@ -408,7 +411,10 @@ h2{
 .footer-left{
   max-width: calc(100% - 324px);
   width: calc(100% - 324px);
+  padding: 60px 0 ;
   justify-content: space-between;
+  padding-right: 30px;
+  border-right: 1px solid #335788;
   .footer-main-menu{
     padding: 0 15px;
   }
@@ -416,7 +422,8 @@ h2{
 .footer-right{
   max-width: 324px;
   width: 324px;
-  padding: 0 25px;
+  padding: 60px  25px;
+  .btn {margin-top: 30px;}
 }
 
 .footer-sec{
@@ -431,4 +438,25 @@ h2{
   h2 {
     
   }
+}
+.footer-top {
+  border-top: 1px solid #335788;
+  border-bottom: 1px solid #335788;
+ .links {margin: 0; line-height: 1;
+    font-size: 24px; line-height: 1.5;
+    font-weight: 400;
+    color: #01ddff;
+    text-decoration: none;
+  } 
+  .f_logo{
+    margin-bottom: 25px;
+    display: block;
+    font-size: 0;
+    }
+}
+
+.btm-footer{
+  padding: 35px 0;
+  color: #34619f;
+  * {color: #34619f; margin: 0; text-decoration: none;}
 }
