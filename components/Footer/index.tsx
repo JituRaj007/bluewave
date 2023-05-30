@@ -12,31 +12,28 @@ const Footer = () =>{
     
 return (
     <>
-        <footer className="footer-sec"
-        >
-            <div className="container">
-                <Image src={LeftSideImage} alt="Left Img" className="footer-left-img" />
-                <div className="md-8">
-                    <div className="mb-12 lg:mb-16">
-                        {
-                            MenuData.map( (menuItem,menuIndex) =>(
-                                <div className={`content ${ menuItem.class } `} key={menuItem.id}>
-                                    <h2>{menuItem.title}</h2>
-                                    <div className={`sub-menu `}>
-                                    {
-                                        menuItem.submenu ?
-                                            menuItem.submenu.map( (subMenuItem,menuIndex) =>(
-                                                <Link href={subMenuItem.path?subMenuItem.path:"/"} key={subMenuItem.id}>{subMenuItem.title}</Link>
-                                            )
-                                        ): ""
-                                    }
-                                    </div>
-                                </div>
-                            )
-                        )}
-                    </div>
+        <footer className="footer-sec position-relative def-sty">
+            <Image src={LeftSideImage} alt="Left Img" className="footer-left-img" />
+            <div className="container d-flex flex-wrap">
+                <div className="footer-left d-flex flex-wrap">
+                    {
+                        MenuData.map( (menuItem,menuIndex) =>(
+                            <div className={`content ${ menuItem.class } `} key={menuItem.id}>
+                                <h3>{menuItem.title}</h3>
+                                <ul className={`sub-menu `}>
+                                {
+                                    menuItem.submenu ?
+                                        menuItem.submenu.map( (subMenuItem,menuIndex) =>(
+                                            <li><Link href={subMenuItem.path?subMenuItem.path:"/"} key={subMenuItem.id}>{subMenuItem.title}</Link></li>
+                                        )
+                                    ): ""
+                                }
+                                </ul>
+                            </div>
+                        )
+                    )}
                 </div>
-                <div className="md-4">
+                <div className="footer-right text-center">
                     <Link href="/">
                         <Image src={Logo} alt="Logo" className="w-full" width={150} height={150} />
                     </Link>
@@ -48,8 +45,8 @@ return (
                         >{Message.FOOTER_GET_STARTED}
                     </button>
                 </div>
-                <Image src={RightSideImage} alt="Right Img" className="footer-right-img" />
             </div>
+            <Image src={RightSideImage} alt="Right Img" className="footer-right-img" />
         </footer>
     </>
 )

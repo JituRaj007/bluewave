@@ -15,7 +15,7 @@ const OurClient = () =>{
                             <div className="service-cont">
                                 {
                                     Sercvice.map( (serviceSec, index) => (
-                                        <div key={serviceSec.id} className={` inner-service-sec`}>
+                                        <>
                                             {
                                                 serviceSec.section ? 
                                                 serviceSec.section.map( (serviceInfo, imageIndex ) => (
@@ -28,7 +28,7 @@ const OurClient = () =>{
                                                     )
                                                 : ''
                                             }
-                                        </div>
+                                        </>
                                         ) 
                                     )
                                 }

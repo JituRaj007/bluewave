@@ -60,18 +60,18 @@ const settings = {
 const Blog = () =>{
     
     return (
-        <div className="blog-section">
+        <div className="blog-section def-sty">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className=" slider-sec ">
+                        <div className="slider-sec ">
                             <Slider {...settings}>
                                 {blog.map((items, i) => (
-                                    <div className="content" key={i}>
-                                        <Image src={items.image} alt="Blog Img" width={200} height={200} />
+                                    <div className="content service-block-con" key={i}>
+                                        <Image src={items.image} alt="Blog Img" width={100} height={200} />
                                         <h5>{items.title}</h5>
                                         <p>{items.content}</p>
-                                        <Link href={items.link}  >Learn More</Link>
+                                        <Link href={items.link} className="service-btn" >Learn More</Link>
                                     </div>
                                 ))}
                             </Slider>
