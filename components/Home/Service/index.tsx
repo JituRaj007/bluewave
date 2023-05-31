@@ -7,15 +7,15 @@ import Link from "next/link";
 const OurClient = () =>{
     return (
         <>
-            <div className="service-section">
+            <div className="service-section def-sty">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h2>Some of our clients</h2>
+                            <h3>Some of our clients</h3>
                             <div className="service-cont">
                                 {
                                     Sercvice.map( (serviceSec, index) => (
-                                        <div key={serviceSec.id} className={` inner-service-sec ${ serviceSec.class } `}>
+                                        <>
                                             {
                                                 serviceSec.section ? 
                                                 serviceSec.section.map( (serviceInfo, imageIndex ) => (
@@ -28,7 +28,7 @@ const OurClient = () =>{
                                                     )
                                                 : ''
                                             }
-                                        </div>
+                                        </>
                                         ) 
                                     )
                                 }

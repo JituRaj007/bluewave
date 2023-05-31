@@ -35,18 +35,18 @@ return (
     <>
     
         <header className={`header ${ sticky ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20" : "" }`}>
-            <div className="container">
-                <div className="relative -mx-4 flex items-center justify-between">
-                    <div className=" w-60 max-w-full px-4 xl:mr-12 logo-sec">
-                        <Link href="/" className={`header-logo block w-full ${  sticky ? "py-5 lg:py-2" : "py-8" } `} >
+            <div className="container-fluid">
+                <div className="relative d-flex justify-content-between align-items-center">
+                    <div className="w-60 max-w-full logo-sec">
+                        <Link href="/" className={`header-logo block w-full ${  sticky ? "" : "" } `} >
                             <Image src={Logo} width={150} height={150} alt="Logo" className="logo-img" />
                         </Link>
                     </div>
-                    <div className="flex w-full items-center justify-between px-4">
+                    <div className="d-flex align-items-center">
                         <div>
                             <button onClick={navbarToggleHandler} id="navbarToggler" aria-label="Mobile Menu" className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden mobile-nav-menu" ></button>
-                            <nav id="navbarCollapse" className={`navbar ${ navbarOpen ? "hover-open" : "hover-close" }`} >
-                                <ul className="block lg:flex lg:space-x-12">
+                            <nav id="navbarCollapse" className={`navbar p-0 ${ navbarOpen ? "hover-open" : "hover-close" }`} >
+                                <ul className="block lg:flex m-0 p-0">
                                     { MenuData.map( (navigationItem, index) =>  
                                         (
                                             <li key={navigationItem.id} className="group relative">

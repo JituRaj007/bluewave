@@ -59,7 +59,7 @@ const settings = {
 const Testimonial = () =>{
     
     return (
-        <div className="testimonial-section">
+        <div className="testimonial-section def-sty">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
