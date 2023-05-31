@@ -575,3 +575,17 @@ h2{
   .footer-sec .footer-left-img, .footer-sec .footer-right-img {display: none;}
   .quick-img-sec {padding-right: 0;} 
 }
+
+.main .error-sec{
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .error-sec h1{margin-bottom: 10px;;}
+main .error-sec a{
+  text-decoration: none;  
+  color: #01ddff; font-weight: 600;
+  font-size: 24px;
+}
