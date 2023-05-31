@@ -19,8 +19,7 @@ const OurClient = () =>{
                                                     {
                                                         logoInfo.section ? 
                                                             logoInfo.section.map( (imageUrl, imageIndex ) => (
-                                                                   <div className="imgs-ico"> <Image 
-                                                                   key ={imageUrl.id}
+                                                                   <div className="imgs-ico" key ={imageUrl.id}> <Image 
                                                                    src={imageUrl.image ? imageUrl.image : ''} 
                                                                    alt={imageUrl.title } 
                                                                    width={100}
