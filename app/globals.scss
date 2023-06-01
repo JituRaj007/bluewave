@@ -616,10 +616,43 @@ h2{
   p{color: #b3ccd6; margin: 0;}
   .row{row-gap: 100px;}
 }
-
+.contact-sec{padding-bottom: 90px;
+  h2{font-weight: bold; font-size: 36px; margin-bottom: 25px;}
+  .container{
+    max-width: 1030px !important;
+  }
+}
 .formSec{
   background-color: #000b1a;
   padding: 60px 100px;
-
   border-radius: 4px;;
+  margin-top: 35px;
+}
+.formSec .btn {text-transform: uppercase;}
+.form-control:first-child{margin-top: 0;}
+.form-control {margin-top: 17px; height: 54px; font-size: 18px; font-weight: 400;  color: #003c8d; border-radius: 2px !important; padding: 0 24px !important; outline: none; box-shadow: none;}
+.form-control::-webkit-input-placeholder { /* Edge */
+  color: #003c8d !important;
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #003c8d !important;
+}
+
+.form-control::placeholder {
+  color: #003c8d !important;
+}
+textarea.form-control {height: 267px; padding: 15px 24px !important; margin-bottom: 17px;}
+.link-sec {
+  padding-bottom: 70px;;
+  h2{margin-bottom: 30px; font-size: 36px; font-weight: bold;}
+  .btn {font-size: 16px !important; padding: 0 35px  !important; margin: 0 10px 20px;}
+}
+
+.full-width-sec{
+  padding-bottom: 300px;; 
+  h2{margin-bottom: 30px; font-size: 36px; font-weight: bold;}
+  img{
+  width: 100% !important    
+  }
 }

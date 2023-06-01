@@ -80,8 +80,8 @@ function Form() {
   };
 
   return (
-    <div className="contact-sec" >
-        <div className="container container-sm text-center">
+    <div className="contact-sec def-sty" >
+        <div className="container text-center">
               <h2>{Message.FORM_TITLE}</h2>
               <p>After we have a plan in place, its time to roll up the sleeves and get to work. We will create a unique design/user experince and build it out around a number of platforms depending on the scope of the project. </p>
                   <div className="formSec">
