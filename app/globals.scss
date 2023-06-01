@@ -365,8 +365,6 @@ h2{
 .case-study-section {
   h2{font-size: 36px;
     font-weight: bold;
-  }
-  h2{
     margin-bottom: 30px;;
   }
 }
@@ -583,9 +581,45 @@ h2{
   justify-content: center;
   text-align: center;
 }
-main .error-sec h1{margin-bottom: 10px;;}
-main .error-sec a{
+.main .error-sec h1{margin-bottom: 10px;;}
+.main .error-sec a{
   text-decoration: none;  
   color: #01ddff; font-weight: 600;
   font-size: 24px;
+}
+
+
+.banner-sec {
+  padding: 140px 0;
+  text-align: center;
+  h1{font-size: 48px; font-weight: 700; margin-bottom: 20px;}
+  p{font-size: 18px; max-width: 635px; margin: 0 auto;}
+}
+
+.hero-sec{
+  padding: 60px 0 140px;;
+  p{
+    color: #b3ccd6;
+    margin: 0;
+    + p {margin-top: 15px;}
+  }
+  h2{font-size: 30px; font-weight: 700; margin-bottom: 30px;}
+  img {margin-bottom: 15px;}
+}
+
+.icon-sec{
+
+  padding: 60px 0 100px;
+  h2{font-size: 36px; font-weight: bold; text-align: center; margin-bottom: 60px;}
+  img{margin:  0 auto 40px;}
+  h3{font-size: 24px; font-weight: 400; margin-bottom: 15px;}
+  p{color: #b3ccd6; margin: 0;}
+  .row{row-gap: 100px;}
+}
+
+.formSec{
+  background-color: #000b1a;
+  padding: 60px 100px;
+
+  border-radius: 4px;;
 }
