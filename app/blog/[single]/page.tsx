@@ -49,8 +49,8 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                         </div>
                     </div>
                 </div>
-                <div className="hero-sec">
-                    <div className="container">
+                <div className="hero-sec def-sty">
+                    <div className="container container-sm"> 
                         <div className="row">
                             <div className="col-12">
                                 <h2>{sub_title}</h2>

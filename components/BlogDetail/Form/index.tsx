@@ -80,70 +80,73 @@ function Form() {
   };
 
   return (
-    <div className="contact-sec" >
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <h2>{Message.FORM_TITLE}</h2>
-                        <div className="">
-                            { success?(
-                                <>
-                                    <p>{Message.FORM_SUCESS_MESSAGE}</p>
-                                </>
-                            ) : (
-                                <form
-                                onSubmit={handleSubmit}
-                                className=""
-                            >
-                                <input
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={formData.first || ''}
-                                    type="text"
-                                    name="first"
-                                    id="first"
-                                    className=""
-                                    placeholder="Name"
-                                />
-                                <span className="text-red-500">{errorMessages.first}</span>
-                                <input
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={formData.email || '' }
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    className=""
-                                    placeholder="Email"
-                                />
-                                <span className="text-red-500">{errorMessages.email}</span>
-                                <input
-                                    type="text"
-                                    name="tel"
-                                    id="tel"
-                                    className=""
-                                    placeholder="Phone (Optional)"
-                                />
-                                <input
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={formData.website || ''}
-                                    type="text"
-                                    name="website"
-                                    id="website"
-                                    className=""
-                                    placeholder="Website (If exists)"
-                                />
-                                <span className="text-red-500">{errorMessages.website}</span>
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
-                                <button className="bg-yellow-600 p-2 m-2 rounded-sm text-white outline-2 outline-yellow-800">
-                                {Message.FORM_SUBMIT_BTN}
-                                </button>
-                                </form>
-                            ) }
-                        </div>
-                </div>
-            </div>
+    <div className="contact-sec def-sty" >
+        <div className="container text-center">
+              <h2>{Message.FORM_TITLE}</h2>
+              <p>After we have a plan in place, its time to roll up the sleeves and get to work. We will create a unique design/user experince and build it out around a number of platforms depending on the scope of the project. </p>
+                  <div className="formSec">
+                      { success?(
+                          <>
+                              <p>{Message.FORM_SUCESS_MESSAGE}</p>
+                          </>
+                      ) : (
+                          <form
+                          onSubmit={handleSubmit}
+                          className="d-flex flex-wrap row"
+                      >
+                          <div className="form-Left col-md-6">
+                            <input
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={formData.first || ''}
+                                type="text"
+                                name="first"
+                                id="first"
+                                className="form-control"
+                                placeholder="Name"
+                            />
+                            <span className="text-red-500">{errorMessages.first}</span>
+                            <input
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={formData.email || '' }
+                                type="email"
+                                name="email"
+                                id="email"
+                                className="form-control"
+                                placeholder="Email"
+                            />
+                            <span className="text-red-500">{errorMessages.email}</span>
+                            <input
+                                type="text"
+                                name="tel"
+                                id="tel"
+                                className="form-control"
+                                placeholder="Phone (Optional)"
+                            />
+                            <input
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={formData.website || ''}
+                                type="text"
+                                name="website"
+                                id="website"
+                                className="form-control"
+                                placeholder="Website (If exists)"
+                            />
+                            <span className="text-red-500">{errorMessages.website}</span>
+                          </div>
+                          <div className="form-right col-md-6">
+                            <textarea name="message" id="message" placeholder="Message" className="form-control"></textarea>
+                            <div className="form-btn text-end">
+                              <button className="btn">
+                              {Message.FORM_SUBMIT_BTN}
+                              </button>
+                            </div>
+                          </div>
+                          </form>
+                      ) }
+                  </div>
         </div>
     </div>
   );

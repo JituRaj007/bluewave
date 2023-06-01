@@ -42,14 +42,14 @@ return (
                             <Image src={Logo} width={150} height={150} alt="Logo" className="logo-img" />
                         </Link>
                     </div>
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center relative">
                         <div>
                             <button onClick={navbarToggleHandler} id="navbarToggler" aria-label="Mobile Menu" className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden mobile-nav-menu" ></button>
                             <nav id="navbarCollapse" className={`navbar p-0 ${ navbarOpen ? "hover-open" : "hover-close" }`} >
                                 <ul className="block lg:flex m-0 p-0">
                                     { MenuData.map( (navigationItem, index) =>  
                                         (
-                                            <li key={navigationItem.id} className="group relative">
+                                            <li key={navigationItem.id} className="group">
                                                 {navigationItem.path ?
                                                     ( <Link href={navigationItem.path} key={navigationItem.id} className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 nav-link`} >{navigationItem.title}</Link> )
                                                     :
@@ -66,7 +66,7 @@ return (
                                                                 </svg>
                                                             </span>
                                                         </a>    
-                                                        <div className={`child-nav-menu-sec submenu relative top-full left-0 rounded-md bg-dark transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[750px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${ openIndex === index ? "block" : "hidden" }`}>
+                                                        <div className={`child-nav-menu-sec submenu relative top-full  transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[750px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${ openIndex === index ? "block" : "hidden" }`}>
                                                         {
                                                             navigationItem.submenu? 
                                                                 navigationItem.submenu.map( (submenuItem, index1) =>  
