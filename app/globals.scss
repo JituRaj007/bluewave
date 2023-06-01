@@ -646,7 +646,12 @@ textarea.form-control {height: 267px; padding: 15px 24px !important; margin-bott
 .link-sec {
   padding-bottom: 70px;;
   h2{margin-bottom: 30px; font-size: 36px; font-weight: bold;}
-  .btn {font-size: 16px !important; padding: 0 35px  !important; margin: 0 10px 20px;}
+  .btn {font-size: 16px !important; padding: 0 35px  !important; margin: 0 10px 20px;
+    &.selected {
+      border-color: #122b58!important;
+      background-color: #122b58 !important;
+    }
+  }
 }
 
 .full-width-sec{
