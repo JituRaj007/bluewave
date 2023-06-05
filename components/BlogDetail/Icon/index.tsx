@@ -11,7 +11,7 @@ const BlogIcon = () => {
                     <div className="row text-center">
                         {
                             IconContent.map( (item,index) => (
-                                <div className="col-md-4" key={item.id} >
+                                <div className="col-lg-4 col-sm-6" key={item.id} >
                                     <Image 
                                         src={item.image}   
                                         width={150}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import MenuData from "../../data/Menu/header";
 import Logo from "../../public/images/Logo/logo.svg";
+import hamburger from "../../public/images/Logo/hamburger.png";
 const Header = () =>{
 
     // Sticky Navbar
@@ -42,11 +43,13 @@ return (
                             <Image src={Logo} width={150} height={150} alt="Logo" className="logo-img" />
                         </Link>
                     </div>
-                    <div className="d-flex align-items-center relative">
+                    <div className="d-lg-flex align-items-center relative header-right">
                         <div>
-                            <button onClick={navbarToggleHandler} id="navbarToggler" aria-label="Mobile Menu" className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden mobile-nav-menu" ></button>
+                            <button onClick={navbarToggleHandler} id="navbarToggler" aria-label="Mobile Menu" className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden mobile-nav-menu" >
+                                <Image src={hamburger} width={150} height={150} alt="Logo" className="logo-img" />
+                            </button>
                             <nav id="navbarCollapse" className={`navbar p-0 ${ navbarOpen ? "hover-open" : "hover-close" }`} >
-                                <ul className="block lg:flex m-0 p-0">
+                                <ul className="block md:flex m-0 p-0">
                                     { MenuData.map( (navigationItem, index) =>  
                                         (
                                             <li key={navigationItem.id} className="group">
@@ -99,7 +102,7 @@ return (
                                 </ul>
                             </nav>
                         </div>
-                        <div className="flex items-center justify-end pr-16 lg:pr-0">
+                        <div className="flex items-center justify-end">
                             <Link href="/" className="conatact-btn" >
                                 Contact
                             </Link>

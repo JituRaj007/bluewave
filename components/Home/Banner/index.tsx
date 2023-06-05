@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LeftSideImage from "../../../public/images/Banner/banner-left.png";
 import RightSideImage from "../../../public/images/Banner/banner-right.png";
+import ArrowImg from "../../../public/images/Banner/banner-arrow.png";
 const Message = require("../../../data/Home/Banner");
 const Banner = () => {
     return(
@@ -23,7 +24,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="scroll-down-arrow">
-			        <Link href="/" >↓</Link>
+			        <Link href="/" ><Image src={ArrowImg} alt="Right Img" className="Arrow Img" /></Link>
                 </div>
             </div>
         </>

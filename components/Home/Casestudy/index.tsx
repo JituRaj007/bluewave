@@ -10,12 +10,12 @@ const Casestudy = () =>{
                 <div className="container">
                     <div className="row">
                         <div className="col-12"><h2>{Message.TITLE}</h2></div>
-                        <div className="col-6">
+                        <div className="col-lg-6">
                             <Image 
                                 src={CaseStudyImage}
                                 alt="Case Study Image" /> 
                         </div>
-                        <div className="col-6">
+                        <div className="col-lg-6 case-txt">
                             <h6>{Message.RIGHT_TITLE}</h6>
                             <h3>{Message.RIGHT_SUB_TITLE}</h3>
                             <p>{Message.RIGHT_CONTENT}</p>
