@@ -58,13 +58,13 @@ const Quickstats = () =>{
                             </div>
                         </div>
                         <div className="quick-img-sec row">
-                            <div className="col-md-6">
+                            <div className="col-lg-6 graph-txt">
                                 <h6>{Message.QUICK_TITLE}</h6>
                                 <h3>{Message.QUICK_SUB_TITLE}</h3>
                                 <p>{Message.QUICK_CONTENT}</p>
                                 <Link href="/" className="btn btn-line">{Message.QUICK_BTN}</Link>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-lg-6 graph-img">
                                 <Image src={RightImage} 
                                     alt="Graph Img" 
                                     className="client-img" 

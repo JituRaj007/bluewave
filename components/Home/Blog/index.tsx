@@ -7,6 +7,8 @@ import React, { Component } from "react";
 import Image from "next/image";
 import blog from "../../../data/Home/Blog";
 import Link from "next/link";
+import ArrowLeftImg from "../../../public/images/Blog/arrow-left-slick.png";
+import ArrowRightImg from "../../../public/images/Blog/arrow-right-slick.png";
 
 // CAROUSEL SETTINGS
 
@@ -40,8 +42,8 @@ const settings = {
     arrows: true,
     autoplay: true,
     speed: 500,
-    nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
-    prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
+    nextArrow: <div><Image src={ArrowRightImg} alt="Blog Img" width={100} height={200} /></div>,
+    prevArrow: <div><Image src={ArrowLeftImg} alt="Blog Img" width={100} height={200} /></div>,
     cssEase: "linear",
     responsive: [
         {
@@ -69,6 +71,7 @@ const Blog = () =>{
                             <Slider {...settings}>
                                 {blog.map((items, i) => (
                                     <div className="content service-block-con" key={i}>
+                                        
                                         <Image src={items.image} alt="Blog Img" width={100} height={200} />
                                         <h5>{items.title}</h5>
                                         <p>{items.content}</p>
