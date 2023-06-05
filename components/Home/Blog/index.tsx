@@ -71,7 +71,6 @@ const Blog = () =>{
                             <Slider {...settings}>
                                 {blog.map((items, i) => (
                                     <div className="content service-block-con" key={i}>
-                                        
                                         <Image src={items.image} alt="Blog Img" width={100} height={200} />
                                         <h5>{items.title}</h5>
                                         <p>{items.content}</p>

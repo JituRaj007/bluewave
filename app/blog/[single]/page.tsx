@@ -54,7 +54,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                         <div className="row">
                             <div className="col-12">
                                 <h2>{sub_title}</h2>
-                                <Image src={image?image:""} alt="Blog Detail Img" width={500} height={500} />
+                                <Image src={image?image:""} alt="Blog Detail Img" width={850} height={480} />
                                 <p>{Message.BANNER_CONTENT}{Message.BANNER_CONTENT}</p> 
                                 <p>{Message.BANNER_CONTENT}</p>
                                 <p>{Message.BANNER_CONTENT}</p>

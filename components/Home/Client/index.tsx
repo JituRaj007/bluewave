@@ -22,7 +22,7 @@ const OurClient = () =>{
                                                                    <div className="imgs-ico" key ={imageUrl.id}> <Image 
                                                                    src={imageUrl.image ? imageUrl.image : ''} 
                                                                    alt={imageUrl.title } 
-                                                                   width={100}
+                                                                   width={200}
                                                                    height={100}
                                                                    className={"wow fadeInUp client-img"}
                                                                    /></div>
