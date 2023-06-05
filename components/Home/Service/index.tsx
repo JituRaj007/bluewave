@@ -11,7 +11,7 @@ const OurClient = () =>{
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h3>Some of our clients</h3>
+                            <h3>Our Services</h3>
                             <div className="service-cont">
                                 {
                                     Sercvice.map( (serviceSec, index) => (
