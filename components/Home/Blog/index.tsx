@@ -41,13 +41,22 @@ const settings = {
     slidesToScroll: 3,
     arrows: true,
     autoplay: true,
-    speed: 500,
+    speed: 1200,
     nextArrow: <div><Image src={ArrowRightImg} alt="Blog Img" width={100} height={200} /></div>,
     prevArrow: <div><Image src={ArrowLeftImg} alt="Blog Img" width={100} height={200} /></div>,
     cssEase: "linear",
     responsive: [
         {
-            breakpoint: 420,
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+               dots: false
+            }
+        },
+        {
+            breakpoint: 575,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
