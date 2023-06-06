@@ -27,5 +27,4 @@ const Digitalmarketing = () =>{
         </>
     )
 };
-
 export default Digitalmarketing;
