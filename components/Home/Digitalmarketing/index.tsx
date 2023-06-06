@@ -6,7 +6,7 @@ const  Message = require("../../../data/Home/Digitalmarketing");
 const Digitalmarketing = () =>{
     return(
         <>
-            <div className="digital-marketing-section text-center">
+            <div className="digital-marketing-section text-center" id="digital-marketing">
                 <div className="container container-sm">
                     <div className="row ">
                         <div className="col-12">
