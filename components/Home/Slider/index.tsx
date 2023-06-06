@@ -63,7 +63,7 @@ const settings = {
     cssEase: "linear",
     responsive: [
         {
-            breakpoint: 420,
+            breakpoint: 575,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
