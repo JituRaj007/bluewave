@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-export default function FourOhFour() {
-  return <>
+export default function Error() {
+  return (
     <main className="main error">
         <div className="error-sec" >
             <div className="container">
@@ -16,5 +16,5 @@ export default function FourOhFour() {
             </div>
         </div>
     </main>
-  </>
+  )
 }
