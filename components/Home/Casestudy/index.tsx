@@ -19,7 +19,7 @@ const Casestudy = () =>{
                             <h6>{Message.RIGHT_TITLE}</h6>
                             <h3>{Message.RIGHT_SUB_TITLE}</h3>
                             <p>{Message.RIGHT_CONTENT}</p>
-                            <Link href="/" className="btn btn-line">{Message.BTN}</Link>
+                            <Link href="/" className="btn btn-line mt-3">{Message.BTN}</Link>
                         </div>
                     </div>
                 </div>
