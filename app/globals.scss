@@ -448,7 +448,7 @@ h2 {
 
     height: 18px;
     * {
-      display: none !important;
+     opacity: 0;
     }
     &.slick-active {
       background-color: #00ddff;
