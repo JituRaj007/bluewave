@@ -25,6 +25,7 @@ const postData = [
     }
 ]
 
+
 // CAROUSEL SETTINGS
 
 function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
