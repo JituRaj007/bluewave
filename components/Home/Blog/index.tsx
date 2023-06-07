@@ -42,6 +42,8 @@ const settings = {
     arrows: true,
     autoplay: true,
     speed: 1200,
+    nextArrow: <div><Image src={ArrowRightImg} alt="Blog Img" width={100} height={200} /></div>,
+    prevArrow: <div><Image src={ArrowLeftImg} alt="Blog Img" width={100} height={200} /></div>,
     cssEase: "linear",
     responsive: [
         {
