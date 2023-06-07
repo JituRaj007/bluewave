@@ -4,7 +4,7 @@ import Image from "next/image";
 import Sercvice from "../../../data/Home/Service";
 import Link from "next/link";
 
-const OurClient = () =>{
+const Service = () =>{
     return (
         <>
             <div className="service-section def-sty">
@@ -41,4 +41,4 @@ const OurClient = () =>{
     )
 };
 
-export default OurClient;
+export default Service;
