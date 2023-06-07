@@ -287,6 +287,11 @@ em {
   border-radius: 5px;
   background-color: rgba(18, 43, 88, 0);
   border: 1px solid #00ddff;
+  transition: all .4s;
+  &:hover{
+    background-color: #00ddff;
+    color: #fff;
+  }
 }
 .container-sm {
   max-width: 867px !important;
