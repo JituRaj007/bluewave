@@ -107,6 +107,7 @@ body {
   top: 0;
   z-index: 2;
   padding: 0 0;
+  z-index: 123;
   .container-fluid {
     padding: 0 64px;
   }
@@ -1452,6 +1453,4 @@ textarea.form-control {
   .service-block-con * ,
   .service-cont .service-block-con {text-align: center;}
 }
-
-
 .btm-footer p a:hover{color: #fff;}
