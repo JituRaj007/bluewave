@@ -17,8 +17,15 @@ export default function Home() {
                 <Banner />
                 <Digitalmarketing />
                 <OurClient />
-                
+                <Service />
+                <Quickstats />
+                <Testimonial />
+                <Casestudy />
+                <Blog />
+                <Bottom />
             </main>
         </>
     )
 }
+
+
