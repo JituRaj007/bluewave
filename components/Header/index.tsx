@@ -40,9 +40,9 @@ return (
                 <div className="relative d-flex justify-content-between align-items-center">
                     <div className="w-60 max-w-full logo-sec">
                         <Link href="/" className={`header-logo block w-full ${  sticky ? "" : "" } `} >
-                            <Image src={Logo} width={150} height={150} alt="Logo" className="logo-img" />
+                            <Image src={Logo} width={268} height={150} alt="Logo" className="logo-img" />
                         </Link>
-                    </div>
+                    </div> 
                     <div className="d-lg-flex align-items-center relative header-right">
                         <div>
                             <button onClick={navbarToggleHandler} id="navbarToggler" aria-label="Mobile Menu" className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden mobile-nav-menu" >
