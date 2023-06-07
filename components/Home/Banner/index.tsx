@@ -5,6 +5,14 @@ import LeftSideImage from "../../../public/images/Banner/banner-left.png";
 import RightSideImage from "../../../public/images/Banner/banner-right.png";
 import ArrowImg from "../../../public/images/Banner/banner-arrow.png";
 const Message = require("../../../data/Home/Banner");
+
+const handleClickScroll = () => {
+    const element = document.getElementById('digital-marketing');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
 const Banner = () => {
     return(
         <>
@@ -24,7 +32,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="scroll-down-arrow">
-			        <Link href="#digital-marketing" ><Image src={ArrowImg} alt="Right Img" className="Arrow Img" /></Link> 
+                    <Link href="" onClick={handleClickScroll} ><Image src={ArrowImg} alt="Right Img" className="Arrow Img" /></Link>
                 </div>
             </div>
         </>

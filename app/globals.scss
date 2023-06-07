@@ -849,6 +849,10 @@ textarea.form-control {
 .blog-section .slick-arrow.slick-prev {
   display: none !important;
 }
+.overlay-span{
+  top: -100px;height: 1px; width: 1px;
+  display: inline-block;
+}
 @media (max-width: 1599px) {
   .header {
     .container-fluid {
@@ -1142,6 +1146,9 @@ textarea.form-control {
     .banner-right-img{
       top: 15px;
     }
+  }
+  .overlay-span{
+    top: -70px;
   }
 }
 
