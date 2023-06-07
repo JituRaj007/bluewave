@@ -380,6 +380,8 @@ h2 {
   bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
+  transition: all .3s;
+  &:hover{color: #fff;}
 }
 .service-cont {
   display: flex;
