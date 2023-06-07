@@ -30,12 +30,15 @@ body {
   font-size: 18px;
   overflow-x: hidden;
   line-height: 2;
+  padding-top: 100px;;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+    background-color: $first-primary !important
 }
 .scroll-down-arrow {
   position: absolute;
@@ -98,7 +101,10 @@ body {
   opacity: 1;
 }
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
   z-index: 2;
   padding: 0 0;
   .container-fluid {
@@ -178,8 +184,8 @@ em {
   display: flex !important;
 }
 .banner-section {
-  height: 1000px;
-  max-height: calc(100vh - 101px);
+  min-height: 500px;
+  height: calc(100vh - 101px) !important;
   position: relative;
   z-index: 1;
   .banner-left-img {
@@ -1114,6 +1120,18 @@ textarea.form-control {
     padding-bottom: 60px;
   }
   .footer-left  {border: 0;}
+  body{padding-top: 70px;}
+  .banner-section {
+    height: calc(100vh - 71px) !important;
+    .banner-right-img ,
+    .banner-left-img {
+      display: block;
+      max-width: 100px;
+    }
+    .banner-right-img{
+      top: 15px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -1178,6 +1196,11 @@ textarea.form-control {
       font-size: 32px;
     }
   }
+  .testimonial-section {
+    .row {margin: 0;}
+    .col-12{padding: 0;}
+  }
+  
 }
 
 @media (max-width: 575px) {
