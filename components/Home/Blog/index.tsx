@@ -73,9 +73,9 @@ const Blog = () =>{
     return (
         <div className="blog-section def-sty">
             <div className="container">
-                <div className="row">
+                <div className="row wow fadeInUp">
                     <div className="col-12">
-                    <h3>Blog</h3>
+                     <h3>Blog</h3>
                         <div className="slider-sec ">
                             <Slider {...settings}>
                                 {blog.map((items, i) => (

@@ -6,12 +6,12 @@ const BlogIcon = () => {
         <>
             <div className="icon-sec def-sty">
                 <div className="container">
-                <h2>H2 Title</h2>
+                <h2 className="wow fadeInUp">H2 Title</h2>
                         
                     <div className="row text-center">
                         {
                             IconContent.map( (item,index) => (
-                                <div className="col-lg-4 col-sm-6" key={item.id} >
+                                <div className="col-lg-4 col-sm-6 wow fadeInUp" key={item.id} >
                                     <Image 
                                         src={item.image}   
                                         width={150}

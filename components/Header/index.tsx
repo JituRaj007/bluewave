@@ -44,12 +44,12 @@ return (
                         </Link>
                     </div> 
                     <div className="d-lg-flex align-items-center relative header-right">
-                        <div>
+                        <div className="d-flex align-items-center">
                             <button onClick={navbarToggleHandler} id="navbarToggler" aria-label="Mobile Menu" className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden mobile-nav-menu" >
                                 <Image src={hamburger} width={150} height={150} alt="Logo" className="logo-img" />
                             </button>
                             <nav id="navbarCollapse" className={`navbar p-0 ${ navbarOpen ? "hover-open" : "hover-close" }`} >
-                                <ul className="block md:flex m-0 p-0">
+                                <ul className="block lg:flex m-0 p-0">
                                     { MenuData.map( (navigationItem, index) =>  
                                         (
                                             <li key={navigationItem.id} className="group">
@@ -100,12 +100,12 @@ return (
                                         ) ) 
                                     }
                                 </ul>
+                                <Link href="/" className="conatact-btn inline-block" >
+                                    Contact
+                                </Link>
                             </nav>
-                        </div>
-                        <div className="flex items-center justify-end">
-                            <Link href="/" className="conatact-btn" >
-                                Contact
-                            </Link>
+
+                            
                         </div>
                     </div>
                 </div>

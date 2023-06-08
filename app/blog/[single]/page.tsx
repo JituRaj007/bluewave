@@ -42,7 +42,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                 <div className="banner-sec" style={{ backgroundImage: `url(${BackgroundImg.src})`, width: '100%', height: '100%' }}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-12">
+                            <div className="col-12 wow fadeInUp">
                                 <h1>{title}</h1>
                                 <p>{Message.BANNER_TITLE}</p>
                             </div>
@@ -53,12 +53,12 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                     <div className="container container-sm"> 
                         <div className="row">
                             <div className="col-12">
-                                <h2>{sub_title}</h2>
-                                <Image src={image?image:""} alt="Blog Detail Img" width={850} height={480} />
-                                <p>{Message.BANNER_CONTENT}{Message.BANNER_CONTENT}</p> 
-                                <p>{Message.BANNER_CONTENT}</p>
-                                <p>{Message.BANNER_CONTENT}</p>
-                                <p>{Message.BANNER_CONTENT}</p>  
+                                <h2 className="wow fadeInUp">{sub_title}</h2>
+                                <Image src={image?image:""} className="wow fadeInUp" alt="Blog Detail Img" width={850} height={480} />
+                                <p className="wow fadeInUp">{Message.BANNER_CONTENT}{Message.BANNER_CONTENT}</p> 
+                                <p className="wow fadeInUp">{Message.BANNER_CONTENT}</p>
+                                <p className="wow fadeInUp">{Message.BANNER_CONTENT}</p>
+                                <p className="wow fadeInUp">{Message.BANNER_CONTENT}</p>  
                             </div>
                         </div>
                     </div>

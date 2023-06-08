@@ -9,11 +9,11 @@ const BlogFullWidth = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h2>{Message.FULL_WIDTH_CONTENT_TITLE}</h2>
+                            <h2  className="wow fadeInUp">{Message.FULL_WIDTH_CONTENT_TITLE}</h2>
                             <Image src={DigitalImg}
                                 alt="Full Img"
                                 width={500}
-                                height={500} />
+                                height={500}  className="wow fadeInUp" />
                         </div>
                     </div>
                 </div>

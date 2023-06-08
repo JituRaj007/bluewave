@@ -11,11 +11,11 @@ const OurClient = () =>{
                     <div className="row">
                         <div className="col-12">
                             <div className="digital-marketing-con">
-                                <h2>Some of our clients</h2>
+                                <h2 className="wow fadeInUp">Some of our clients</h2>
                                 <div className="client-img-sec">
                                     {
                                         ClientLogo.map( (logoInfo, index) => (
-                                                <div key={logoInfo.id} className={` inner-client-img-sec  `}> 
+                                                <div key={logoInfo.id} className={` inner-client-img-sec wow fadeInLeft`}> 
                                                     {
                                                         logoInfo.section ? 
                                                             logoInfo.section.map( (imageUrl, imageIndex ) => (
