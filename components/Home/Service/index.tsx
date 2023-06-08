@@ -3,7 +3,6 @@ import { log } from "console";
 import Image from "next/image";
 import Sercvice from "../../../data/Home/Service";
 import Link from "next/link";
-
 const OurClient = () =>{
     return (
         <>
