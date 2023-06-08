@@ -8,15 +8,14 @@ const BlogLink = () => {
         <>
             <div className="link-sec def-sty" >
                 <div className="container">
-                    <h2>{Message.Link_TITLE}</h2>
-                    <div className="d-flex align-items-center justify-content-center flex-wrap">
-                        
-                        <Link href="/" className="btn btn-line" >{Message.Link_MENU1}</Link>
-                        <Link href="/" className="btn btn-line" >{Message.Link_MENU2}</Link>
-                        <Link href="/" className="btn btn-line" >{Message.Link_MENU3}</Link>
-                        <Link href="/" className="btn btn-line selected">{Message.Link_MENU4}</Link>
-                        <Link href="/" className="btn btn-line" >{Message.Link_MENU5}</Link>
-                        <Link href="/" className="btn btn-line" >{Message.Link_MENU6}</Link>
+                    <h2 className="wow fadeInUp">{Message.Link_TITLE}</h2>
+                    <div className="d-flex align-items-center justify-content-center flex-wrap">                
+                        <Link href="/" className="btn btn-line wow fadeInLeft" >{Message.Link_MENU1}</Link>
+                        <Link href="/" className="btn btn-line wow fadeInLeft" >{Message.Link_MENU2}</Link>
+                        <Link href="/" className="btn btn-line wow fadeInLeft" >{Message.Link_MENU3}</Link>
+                        <Link href="/" className="btn btn-line wow fadeInLeft selected">{Message.Link_MENU4}</Link>
+                        <Link href="/" className="btn btn-line wow fadeInLeft" >{Message.Link_MENU5}</Link>
+                        <Link href="/" className="btn btn-line wow fadeInLeft" >{Message.Link_MENU6}</Link>
                     </div>
                 </div>
             </div>

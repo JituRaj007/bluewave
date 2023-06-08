@@ -9,7 +9,7 @@ const Bottom = () =>{
             <div className="bottom-section def-sty">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 wow fadeInUp ">
                             <h3>{Message.TITLE}</h3>
                             <p>{Message.CONTENT_FIRST}</p>
                             <p>{Message.CONTENT_SECOND}</p>

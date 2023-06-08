@@ -64,7 +64,7 @@ const Testimonial = () =>{
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className=" slider-sec ">
+                        <div className=" slider-sec wow fadeInUp">
                             <Slider {...settings}>
                                 {testimonial.map((items, i) => (
                                     <div className="content" key={i}>

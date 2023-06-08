@@ -11,7 +11,7 @@ const Quickstats = () =>{
             <div className="quick-stats-section def-sty">
                 <div className="container">
                     <div className="row">
-                        <div className="number-count-sec d-flex flex-wrap justify-content-between">
+                        <div className="number-count-sec d-flex flex-wrap justify-content-between wow fadeInUp">
                             <div className="tweenty-number">
                                 <CountUp 
                                     className="custom-count"
@@ -58,7 +58,7 @@ const Quickstats = () =>{
                             </div>
                         </div>
                         <div className="quick-img-sec row">
-                            <div className="col-lg-6 graph-txt">
+                            <div className="col-lg-6 graph-txt wow fadeInLeft">
                                 <h6>{Message.QUICK_TITLE}</h6>
                                 <h3>{Message.QUICK_SUB_TITLE}</h3>
                                 <p>{Message.QUICK_CONTENT}</p>
