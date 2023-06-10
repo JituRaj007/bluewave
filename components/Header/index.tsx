@@ -6,16 +6,27 @@ import MenuData from "../../data/Menu/header";
 import Logo from "../../public/images/Logo/logo.svg";
 import hamburger from "../../public/images/Logo/hamburger.png";
 const Header = () =>{
-
-    // Sticky Navbar
     const [sticky, setSticky] = useState(false);
     const handleStickyNavbar = () => {
-        if (window.scrollY >= 80) {
-        setSticky(true);
+        if (window.scrollY >= 10) {
+          setSticky(true);
         } else {
-        setSticky(false);
+          setSticky(false);
         }
-    };
+      };
+      useEffect(() => {
+        window.addEventListener("scroll", handleStickyNavbar);
+    });
+
+    // Sticky Navbar
+   /* const [sticky, setSticky] = useState(false);
+    const handleStickyNavbar = () => {
+        if (window.scrollY >= 80) {
+            setSticky(true);
+        } else {
+            setSticky(false);
+        }
+    };*/
 
     // Navigation
     const [navbarOpen, setNavbarOpen] = useState(false);
@@ -35,7 +46,7 @@ const Header = () =>{
 return (
     <>
     
-        <header className={`header ${ sticky ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20" : "" }`}>
+        <header className={`header ${ sticky ? "sticky-header" : "" }`}>
             <div className="container-fluid">
                 <div className="relative d-flex justify-content-between align-items-center">
                     <div className="w-60 max-w-full logo-sec">
