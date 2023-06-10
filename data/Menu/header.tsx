@@ -155,6 +155,13 @@ const MenuHeaderData: Menu[] = [
         class: "",
         path: "/",
         newTab: false,
+    },
+    {
+        id: 5,
+        title: "404",
+        class: "",
+        path: "/error",
+        newTab: false,
     }
 ];
 export default MenuHeaderData;
