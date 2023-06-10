@@ -3,11 +3,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import './globals.scss';
-import { useEffect } from 'react';
+/*import { useEffect } from 'react';
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 const isServer = typeof window === 'undefined';
-const WOW = !isServer ? require('wow.js') : null;
+const WOW = !isServer ? require('wow.js') : null;*/
 /*export const metadata = {
   title: 'Blue Wave',
   description: '',
@@ -19,10 +19,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
+/*
   useEffect(() => {
     new WOW().init();
-  }, []);
+  }, []);*/
     return (
         <html suppressHydrationWarning lang="en">
             <head>
