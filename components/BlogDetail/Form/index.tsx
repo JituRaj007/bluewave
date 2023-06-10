@@ -44,7 +44,12 @@ function Form() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setErrorMessages(validate(formData));
+    const checkMessage = validate(formData);
+    if( checkMessage.first === '' && checkMessage.email === '' && checkMessage.website === '' ){
+        setSuccess(true)
+    }else{
+        setErrorMessages(validate(formData));
+    }
   };
 
   const validate = (formValues: any) => {
@@ -58,13 +63,7 @@ function Form() {
     } else {
       error.first = "";
     }
-    
-    if (!formValues.website) {
-      error.website = "Website is required";
-    } else {
-      error.website = "";
-    }
-    
+   
     if (!formValues.email) {
         error.email = "email is required";
     } else if( !validateEmail(formValues.email) ){
@@ -73,9 +72,6 @@ function Form() {
       error.email = "";
     }
 
-    if( ( error.first == "") && ( error.email == "") && ( error.website == "") ){
-        setSuccess(true)
-    }
     return error;
   };
 
@@ -125,14 +121,11 @@ function Form() {
                                 placeholder="Phone (Optional)"
                             />
                             <input
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={formData.website || ''}
                                 type="text"
                                 name="website"
                                 id="website"
                                 className="form-control"
-                                placeholder="Website (If exists)"
+                                placeholder="Website (Optional)"
                             />
                             <span className="text-red-500">{errorMessages.website}</span>
                           </div>
