@@ -14,15 +14,7 @@ export default function Home() {
   return (
 	    <>
             <main className="main home">
-                <Banner />
-                <Digitalmarketing />
-                <OurClient />
-                <Service />
-                <Quickstats />
-                <Testimonial />
-                <Casestudy />
-                <Blog />
-                <Bottom />
+                
             </main>
         </>
     )
