@@ -13,7 +13,6 @@ const WOW = !isServer ? require('wow.js') : null;*/
   description: '',
 }*/
 
-
 export default function RootLayout({
   children,
 }: {
