@@ -33,7 +33,7 @@ const Banner = () => {
                 </div>
                 <div className="scroll-down-arrow">
 
-                    <Link href="javascript:void(0);" onClick={handleClickScroll} ><Image src={ArrowImg} alt="Right Img" className="Arrow Img" /></Link>
+                    <Image src={ArrowImg} alt="Right Img" className="Arrow Img" onClick={handleClickScroll} />
                 </div>
             </div>
         </>
