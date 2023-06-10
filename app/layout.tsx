@@ -12,7 +12,6 @@ const WOW = !isServer ? require('wow.js') : null;*/
   title: 'Blue Wave',
   description: '',
 }*/
-
 export default function RootLayout({
   children,
 }: {
