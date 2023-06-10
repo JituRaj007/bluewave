@@ -16,7 +16,13 @@ export default function Home() {
             <main className="main home">
                 <Banner />
                 <Digitalmarketing />
-                
+                <OurClient />
+                <Service />
+                <Quickstats />
+                <Testimonial />
+                <Casestudy />
+                <Blog />
+                <Bottom />
             </main>
         </>
     )
