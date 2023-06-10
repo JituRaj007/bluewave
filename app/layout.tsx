@@ -1,6 +1,7 @@
 "use client";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 /*import "bootstrap/dist/css/bootstrap.min.css"; 
 import './globals.scss';*/
 //import { useEffect } from 'react';
@@ -31,9 +32,10 @@ export default function RootLayout({
               
             </head>
             <body className="">
-                <Header />
+              <Link href="/error">Error</Link>
+                
                 {children}
-                <Footer />
+               
             </body>
         </html>
     )
